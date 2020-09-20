@@ -11,7 +11,10 @@ Options +FollowSymlinks
 #-------------------------------------------------------------------------------
 # Règles de réécriture d'URL :
 #-------------------------------------------------------------------------------
-
+  #DETAIL D'UN POST
+  #PATTERN: posts/{id}/{slug}
+  #ULR: index.php?postId=X
+  rewriteRule ^posts\/([1-9][0-9]*)\/([a-z0-9][a-z0-9\-]*)$ index.php?postId=$1  [L]
 
 #-------------------------------------------------------------------------------
 RewriteCond %{REQUEST_URI} !\.(js|css|jpg|gif|zip|png|pdf)$ [NC]

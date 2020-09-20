@@ -2,5 +2,6 @@
 /*
 ./noyau/init.php
 */
-require_once '../app/config/parametres.php';
+require_once '../app/config/params.php';
 require_once '../noyau/connexion.php';
+require_once '../noyau/fonction.php';

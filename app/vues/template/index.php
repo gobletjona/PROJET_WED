@@ -31,6 +31,7 @@ TEMPLATE PRINCIPALE
              <div class="row">
                  <div class="col-lg-8 mb-5 mb-lg-0">
                     <?php echo $content; ?>
+
                  </div>
                  <div class="col-lg-4">
                      <div class="blog_right_sidebar">
@@ -45,7 +46,7 @@ TEMPLATE PRINCIPALE
  <footer>
      <!-- Footer Start-->
      <div class="footer-main" data-background="assets/img/gallery/section_bg4.png">
-         <?php include'../app/vues/template/partials/_footer.php'; ?>
+         <?php require '../app/vues/template/partials/_footer.php'; ?>
      </div>
      <!-- Footer End-->
  </footer>
