@@ -14,3 +14,7 @@ define('HOSTNAME', 'localhost');
 define('DBNAME', 'wed_project');
 define('USERNAME', 'root');
 define('USERPWD', '');
+
+//textes
+define('TITRE_USERS_LOGINFORM', 'Connexion au backoffice');
+define('TITRE_POSTE_INDEX', 'Liste des posts');

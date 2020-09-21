@@ -14,6 +14,8 @@ if (isset($_GET['postId'])) :
   include_once '../app/controleurs/postsControleur.php';
   \App\Controleurs\PostsControleur\showAction($connexion, $_GET['postId']);
 
+  elseif(isset($_GET['users'])):
+    include '../app/routeurs/usersRouteur.php';
 
 // ROUTE PAR DEFAUT
 // PATTERN: /

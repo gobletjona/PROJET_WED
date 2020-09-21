@@ -9,6 +9,7 @@ TEMPLATE PRINCIPALE
  <!doctype html>
  <html class="no-js" lang="zxx">
  <head>
+   <base href="<?php echo BASE_URL; ?>" target="_top">
     <?php include '../app/vues/template/partials/_head.php'; ?>
  </head>
  <body>

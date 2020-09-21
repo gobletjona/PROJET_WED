@@ -14,7 +14,7 @@ function indexAction(\PDO $connexion, array $params = []) {
 
   // Je charge la vue posts/index dans $content
     GLOBAL $title, $content;
-    $title = "Blog";
+    $title = TITRE_POSTE_INDEX;
     ob_start();
       include '../app/vues/posts/index.php';
     $content = ob_get_clean();

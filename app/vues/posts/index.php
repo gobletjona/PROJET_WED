@@ -16,7 +16,7 @@
         </div>
 
         <div class="blog_details">
-            <a class="d-inline-block" href="?postId=<?php echo $post['id']; ?>">
+            <a class="d-inline-block" href="posts/<?php echo $post['id'] ?>/<?php echo \Noyau\Fonction\slugify($post['title']) ?>">
                 <h2><?php echo $post['title']; ?></h2>
             </a>
             <p><?php echo $post['content']; ?></p>

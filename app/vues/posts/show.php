@@ -1,9 +1,9 @@
 <?php
 /*
 ./app/vues/posts/show.php
-
  */
  ?>
+ 
  <div class="single-post">
     <div class="feature-img">
        <img class="img-fluid" src="assets/img/blog/<?php echo $post['image']; ?>" alt="<?php echo $post['title']; ?>">
