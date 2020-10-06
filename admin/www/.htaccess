@@ -1,0 +1,31 @@
+#--------------------------------------------------
+# Répertoire : /
+#--------------------------------------------------
+
+# Le serveur doit suivre les liens symboliques :
+  Options +FollowSymlinks
+
+# Activation du module de réécriture d'URL :
+  RewriteEngine on
+
+#---------------------------------------------------
+#ROUTES DES USERS
+#---------------------------------------------------
+
+# DECONNEXION DU USER
+# PATTERN: user/logout
+# VERS: index.php?user=logout
+RewriteRule ^user\/logout$ index.php?user=logout [L]
+
+
+#----------------------------------------------------
+# ROUTES DES CATEGORIES
+#----------------------------------------------------
+# LISTE DES CATEGORIES
+# PATTERN: categories
+# VERS: index.php?categories=index
+RewriteRule ^categories$ index.php?categories=index [L]
+
+# --------------------------------------------------
+  RewriteCond %{REQUEST_URI} !\.(js|css|jpg|gif|zip|png|pdf)$ [NC]
+  RewriteRule ^(.*)$ index.php [L]
