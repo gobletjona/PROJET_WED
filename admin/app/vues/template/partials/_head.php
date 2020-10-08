@@ -9,6 +9,7 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <meta name="description" content="">
 <meta name="author" content="">
+<!--NE PAS OUBLIER LE BASE POUR QUE LE CHEMIN D'ARBORESCANCE COMMENCE AUX FICHIER ADMIN-->
 <base href="<?php echo BASE_URL_ADMIN; ?>" target="_top">
 <link rel="icon" href="../../favicon.ico">
 
